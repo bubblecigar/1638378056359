@@ -1,4 +1,4 @@
-export const throttle = (func, context, delay = 1000) => {
+const throttle = (func, context, delay = 1000) => {
   let lock = false
   return (...args) => {
     if (lock) {

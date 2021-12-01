@@ -16,14 +16,3 @@ const debounce = (func, context, delay = 1000) => {
     )
   }
 }
-
-const talker = {
-  name: 'abc',
-}
-function log(text) { console.log(`${this.name}: ${text}`) }
-const debounceLog = debounce(log, talker, 100)
-debounceLog('1')
-debounceLog('2')
-debounceLog('3')
-debounceLog('4')
-debounceLog('5') // only 5 is excuted
